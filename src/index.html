@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/output.css">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -12,51 +14,55 @@
   <header>
     <div class="flex fixed bg-black w-full px-3 md:px-20 py-4">
       <div class="container flex items-center mx-auto">
-      <div>
-        <a href="#">
-          <img src="src/img/spotify-logo.png" alt="Spotify" class="w-20 md:w-125px">
-        </a>
+        <div>
+          <a href="#">
+            <img src="img/spotify-logo.png" alt="Spotify" class="w-20 md:w-125px">
+          </a>
+        </div>
+        <div class="flex justify-end flex-1 md:hidden text-white text-3xl ml-auto">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="items-end flex-1 text-white font-bold hidden md:flex">
+          <nav class="flex-1">
+            <ul class="flex justify-end flex-1">
+              <li class="px-4">
+                <a href="#" class="hover:text-hoverspt text-sm">Premium</a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="hover:text-hoverspt text-sm">Ajuda</a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="hover:text-hoverspt text-sm">Baixar</a>
+              </li>
+              <li class="px-4">
+                <span class="border-r border-white"></span>
+              </li>   
+              <li class="px-4">
+                <a href="#" class="hover:text-hoverspt text-sm">Inscrever-se</a>
+              </li>
+              <li class="px-4">
+                <a href="#" class="hover:text-hoverspt text-sm">Log in</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <div class="flex justify-end flex-1 md-hidden text-white text-3x1">
-        <i class="fas fa-bars"></i>
-      </div>
-      <div class="items-end flex-1 text-white font-bold hidden md:flex">
-        <nav class="flex-1">
-          <ul class="flex justify-end flex-1">
-            <li class="px-4">
-              <a href="#" class="hover:text-hoverspt text-sm">Premium</a>
-            </li>
-            <li class="px-4">
-              <a href="#" class="hover:text-hoverspt text-sm">Ajuda</a>
-            </li>
-            <li class="px-4">
-              <a href="#" class="hover:text-hoverspt text-sm">Baixar</a>
-            </li>
-            <li class="px-4">
-              <span class="border-r border-white"></span>
-            </li>   
-            <li class="px-4">
-              <a href="#" class="hover:text-hoverspt text-sm">Inscrever-se</a>
-            </li>
-            <li class="px-4">
-              <a href="#" class="hover:text-hoverspt text-sm">Log in</a>
-            </li>
-          </ul>
-        </nav>
     </div>
   </header>
+  
   <!--CONTEUDO-->
   <main>
-    <div class="flex flex-col justify-center text-center bg-spotify-theme-mobile 
-    md:bg-spotify-theme bg-banner-mobile md:bg-banner bg-195% md:bg-175% py-40 
-    bg-purple-main text-green-main px-4">
-      <h1 class="text-5x1 md:text-9x1 mb-10 font-bold max-w-4x1 mx-auto 
-      leading-none">Escutar muda tudo</h1>
+    <div class="flex flex-col justify-center text-center py-40 bg-purple-300 text-green-700 px-4"
+         style="background-image: url('img/bursts.svg'); background-size: cover; min-height: 100vh;">
+      <div class="hidden md:block" style="background-image: url('img/bursts-mobile.svg'); background-size: cover;">
+      </div>
+
+      <h1 class="text-5xl md:text-9xl mb-10 font-bold max-w-4xl mx-auto leading-none">Escutar muda tudo</h1>
       <p class="text-md md:text-lg mb-10">Milhões de músicas e podcasts para explorar. E nem precisa de cartão de crédito.</p>
-      <a href="#" class="bg-green-main hover:bg-white text-purple-main text-sm rounded-full px-10
-       py-3 uppercase font-bold max-w-x1 mx-auto tracking-widest transition duration-500">Obtenha o Spotify Free</a>
+      <a href="#" class="bg-green-600 hover:bg-white text-purple-300 text-sm rounded-full px-10 py-3 uppercase font-bold max-w-xl mx-auto tracking-widest transition duration-500">Obtenha o Spotify Free</a>
     </div>
   </main>
+
   <!--FOOTER-->
   <footer>
     <div class="grid grid-cols-1 md:grid-cols-6 bg-black text-white p-4 md:p-20">
@@ -113,8 +119,8 @@
           </li>
         </ul>
       </div>
-      <div class="md:col-span-2 pt-10 md:pt-4" >
-        <ul>
+      <div class="md:col-span-2 pt-10 md:pt-4">
+        <ul class="flex justify-end">
           <li class="flex items-center justify-center text-2xl bg-gray-900 w-12 h-12 rounded-full hover:text-green-main mx-2">
             <a href="#"><i class="fab fa-instagram"></i></a>
           </li>
