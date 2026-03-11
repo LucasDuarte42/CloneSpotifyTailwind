@@ -45,7 +45,9 @@ Após abrir o arquivo `index.html` no navegador, você poderá navegar pela inte
 
 ![Screenshot do Projeto](<img width="2545" height="1829" alt="image" src="https://github.com/user-attachments/assets/50b28813-0aba-41fe-a921-885b35dbf02f" />)
 
+## 📄 Licença
 
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes. 
 
 
 ## 📞 Contato
