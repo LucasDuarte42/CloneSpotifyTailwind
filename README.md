@@ -43,7 +43,8 @@ start src/index.html
 
 Após abrir o arquivo `index.html` no navegador, você poderá navegar pela interface do clone do Spotify. Explore os diferentes elementos e observe a responsividade ao redimensionar a janela do navegador.
 
-![Screenshot do Projeto](<img width="2545" height="1829" alt="image" src="https://github.com/user-attachments/assets/2db3255c-eed7-4af4-99b2-0dce0a2d3e18" />)
+![Screenshot do Projeto](https://github.com/user-attachments/assets/a7a80105-4f2d-4e72-8067-2b063fa8dc5e)
+
 
 ## 📄 Licença
 
